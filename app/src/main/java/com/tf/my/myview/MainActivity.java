@@ -36,13 +36,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.success:
+                //支付成功
                 payView.setStatus(2);
                 break;
             case R.id.fail:
+                //支付失败
                 payView.setStatus(3);
-                break;
-            case R.id.loading:
-                payView.setStatus(1);
                 break;
         }
     }
